@@ -1,10 +1,11 @@
 #include "binary_trees.h"
 /**
  * binary_tree_delete - function used to free memory
- * @tree - pointer to the root node of the tree to delete
+ * @tree: pointer to the root node of the tree to delete
  */
 
-void binary_tree_delete(binary_tree_t *tree){
+void binary_tree_delete(binary_tree_t *tree)
+{
 
 	binary_tree_delete(tree->left);
 	binary_tree_delete(tree->right);
